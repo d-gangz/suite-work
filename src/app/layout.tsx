@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Sidenav from "@/components/sidenav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-100`}
       >
-        {children}
+        <div className="flex min-h-screen">
+          <div className="flex items-center p-4">
+            <Sidenav />
+          </div>
+          <main className="flex-1 p-4">{children}</main>
+        </div>
       </body>
     </html>
   );

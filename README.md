@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Project with Magic UI and Shadcn UI Components
+
+This project is built with [Next.js](https://nextjs.org) and bootstrapped using [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). 
+
+It showcases two component animations and utilizes both Magic UI and Shadcn UI components.
+
+## Features
+
+- Next.js 14 with App Router
+- [Magic UI animations - shiny text](https://magicui.design/docs/components/animated-shiny-text)
+- [Shadcn UI](https://ui.shadcn.com/) components
+- Tailwind CSS for styling
+
+## Animations Showcase
+
+1. Animated Shiny Text (Magic UI)
+2. Founding badge
 
 ## Getting Started
 

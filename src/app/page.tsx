@@ -1,3 +1,7 @@
+// import Activity from "@/components/activity";
+// import LeftContentWrapper from "@/components/left-content-wrapper";
+// import ProfileContent from "@/components/profile-content";
+// import ProfileHeader from "@/components/profile-header";
 import StatusTitle from "@/components/status-title";
 
 export default function Home() {
@@ -11,5 +15,11 @@ export default function Home() {
         // userImage="https://via.placeholder.com/48x48"
       />
     </div>
+    // <LeftContentWrapper />
+    // <>
+    //   <ProfileHeader />
+    //   <ProfileContent />
+    //   <Activity />
+    // </>
   );
 }

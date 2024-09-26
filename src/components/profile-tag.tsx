@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Twitter, Linkedin } from "lucide-react";
+import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 
 type ProfileTagProps = {
   name: string;
@@ -38,13 +39,7 @@ const ProfileTag = ({
       <CardContent className="flex gap-5 p-0">
         <Avatar className="h-[150px] w-[150px]">
           <AvatarImage src={avatarSrc} alt={name} />
-          <AvatarFallback>
-            {"OM"}
-            {/* {name
-              .split(" ")
-              .map((n) => n[0])
-              .join("")} */}
-          </AvatarFallback>
+          <AvatarFallback>{"OM"}</AvatarFallback>
         </Avatar>
         <div className="flex flex-col gap-4 flex-1">
           <div className="flex flex-col gap-2">
@@ -67,7 +62,9 @@ const ProfileTag = ({
                 variant="secondary"
                 className="w-fit text-[11px] font-medium text-stone-500"
               >
-                {memberType}
+                <AnimatedShinyText shimmerWidth={100}>
+                  {memberType}
+                </AnimatedShinyText>
               </Badge>
             </div>
             <div className="flex items-center gap-2 text-[13px]">
